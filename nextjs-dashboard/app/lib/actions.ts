@@ -63,6 +63,9 @@ export async function createInvoice(prevState: State, formData: FormData) {
       VALUES (${customerId}, ${amountInCents}, ${status}, ${date})
     `;
   } catch (error) {
+    // do something with error to avoid "Error: 'error' is defined but never used.  @typescript-eslint/no-unused-vars"
+    console.log(error);
+    console.clear();
     // If a database error occurs, return a more specific error.
     return { message: 'Database Error: Failed to Create Invoice.' };
   }
@@ -100,6 +103,9 @@ export async function updateInvoice(id: string, prevState: State, formData: Form
       WHERE id = ${id}
     `;
   } catch (error) {
+    // do something with error to avoid "Error: 'error' is defined but never used.  @typescript-eslint/no-unused-vars"
+    console.log(error);
+    console.clear();
     // If a database error occurs, return a more specific error.
     return { message: 'Database Error: Failed to Update Invoice.' };
   }
