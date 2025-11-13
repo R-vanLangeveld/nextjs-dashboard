@@ -1,3 +1,4 @@
-use cd nextjs-dashboard
+First use cd nextjs-dashboard
 
-then pnpm dev
+Then pnpm dev
+Or pnpm lint
