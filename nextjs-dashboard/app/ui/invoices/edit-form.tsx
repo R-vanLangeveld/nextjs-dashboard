@@ -22,7 +22,7 @@ export default function EditInvoiceForm({
   const initialState: State = { message: null, errors: {} };
   const updateInvoiceWithId = updateInvoice.bind(null, invoice.id);
   const [state, formAction] = useActionState(updateInvoiceWithId, initialState);
-  // do somthing with state
+  // do something with state to avoid "Error: 'state' is assigned a value but never used.  @typescript-eslint/no-unused-vars"
   console.log(state);
   console.clear();
 

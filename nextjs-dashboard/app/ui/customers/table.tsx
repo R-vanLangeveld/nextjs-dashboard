@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import { lusitana } from '@/app/ui/fonts';
 import Search from '@/app/ui/search';
-// comment line 6 or do somthing with CustomersTableType
+// comment line 6 or do something with CustomersTableType to avoid "Error: 'CustomersTableType' is defined but never used.  @typescript-eslint/no-unused-vars"
 import {
   // CustomersTableType,
   FormattedCustomersTable,
