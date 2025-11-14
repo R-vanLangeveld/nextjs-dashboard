@@ -18,9 +18,6 @@ export default defineConfig([
         version: 'detect',
       },
     },
-    rules: {
-      '@typescript-eslint/no-unused-vars': 'off'
-    }
   },
   tseslint.configs.recommended,
   pluginReact.configs.flat.recommended,
